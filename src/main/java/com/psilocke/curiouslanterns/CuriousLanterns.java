@@ -214,7 +214,7 @@ public class CuriousLanterns {
 
     private void enqueueIMC(final InterModEnqueueEvent event) {
     	
-    	InterModComms.sendTo(CuriosApi.MODID, SlotTypeMessage.REGISTER_TYPE, () -> SlotTypePreset.BELT.getMessageBuilder().size(CuriousLanternsCommonConfig.TOTAL_SLOTS.get()).build());
+    	InterModComms.sendTo(CuriosApi.MODID, SlotTypeMessage.REGISTER_TYPE, () -> SlotTypePreset.CHARM.getMessageBuilder().size(CuriousLanternsCommonConfig.TOTAL_SLOTS.get()).build());
     	
         /*
          InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("hip")
